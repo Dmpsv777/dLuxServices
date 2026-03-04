@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my very FIRST project!!!">
+    <title>dLuxServices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="hero">
+    <div class="header-mob">
+        <input class="header-mob__menu-toggle" type="checkbox" id="menu-toggle">
+        <label class="header-mob__menu-btn" for="menu-toggle">
+            <svg class="header-mob__menu-icon mob-icon-open" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11L9 11M1 6H15M7 1L15 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="header-mob__menu-icon mob-icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 16L8 8M16 8L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </label>
+        <div class="header-mob__menu-backdrop"></div>
+        <ul class="header-mob__menu">
+            <li class="mob-menu-part-one">
+                <h2 class="mob-menu-part-one__menu-title">Menu</h2>
+                <ul class="mob-menu-part-one__menu-list">
+                    <li class="mob-menu-part-one__menu-item">
+                        <a class="menu-link" href="#about">About</a>
+                    </li>
+                    <li class="mob-menu-part-one__menu-item">
+                        <a class="menu-link" href="#services">Services</a>
+                    </li>
+                    <li class="mob-menu-part-one__menu-item">
+                        <a class="menu-link" href="#founder">Founder</a>
+                    </li>
+                    <li class="mob-menu-part-one__menu-item">
+                        <a class="menu-link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mob-menu-part-two">
+                <ul class="mob-menu-part-two__menu-list">
+                    <li class="mob-menu-part-two__menu-item mob-item-email">
+                        <a class="menu-link" href="mailto:1@dlux.services">1@dlux.services</a>
+                    </li>
+                    <li class="mob-menu-part-two__menu-item mob-item-tel">
+                        <a class="menu-link" href="tel:+18143511265">+18143511265</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hero__container container">
+
+        <div class="header-desktop">
+            <img class="header-desktop__logo" src="images/logo.svg" alt="logo" width="159" height="104">
+            <ul class="header-desktop__menu">
+                <li>
+                    <a class="menu-link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="#founder">Founder</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-content__title">Cloud software development</h1>
+            <ul class="hero-content__list">
+                <li class="hero-content__item">Websites, mobile applications</li>
+                <li class="hero-content__item">Remote development teams</li>
+                <li class="hero-content__item">Cloud Infrastructure Management</li>
+            </ul>
+            <button class="hero-content__btn btn btn--narrow">Send a request</button>
+        </div>
+    </div>
+</section>
+
+<div class="about-services-wrapper">
+    <section class="about" id="about">
+        <div class="about__container container">
+            <div class="about-content">
+                <h1 class="about-content__title">Basic marketing information <span class="title-span">about the company</span></h1>
+                <p class="about-content__text">Basic marketing info about the company: We deliver customized cloud based solutions for your ideas. 20 years of high performance cloud based development experience (that’s my experience incl. Google and Gemini).</p>
+                <button class="about-content__btn btn btn--narrow">Send a request</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="glow-blob-left"></div>
+
+    <section class="services" id="services">
+        <div class="services__container container">
+            <h1 class="services__title">Services</h1>
+            <div class="services__cards">
+                <div class="service-card service-crd-1">
+                    <div>
+                        <h2 class="service-card__title">Cloud based development</h2>
+                        <p class="service-card__text">Develop an app for your project: web and mobile apps for your custom business needs on Amazon Web Services, Google Cloud Platform or your private cloud.</p>
+                    </div>
+                    <button class="service-card__btn btn">Send a request</button>
+                </div>
+                <div class="service-card service-crd-2">
+                    <div>
+                        <h2 class="service-card__title">Remote development teams</h2>
+                        <p class="service-card__text">Manage and improve your services with a dedicated development team that covers all functions. You only need to define the tasks and priorities, we are doing the rest.</p>
+                    </div>
+                    <button class="service-card__btn btn">Send a request</button>
+                </div>
+                <div class="service-card service-crd-3">
+                    <div>
+                        <h2 class="service-card__title">Infrastructure management</h2>
+                        <p class="service-card__text">We monitor your services and keep them running 24/7</p>
+                    </div>
+                    <button class="service-card__btn btn">Send a request</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="founder-contacts-wrapper">
+    <section class="founder" id="founder">
+        <div class="founder__container container">
+            <h1 class="founder__title">Founder</h1>
+            <p class="founder__text">Balazs, 20 years experience in cloud development, leader and contributor of many projects with billions of users as a senior Google</p>
+            <div class="founder__pic-contr">
+                <img class="founder__pic" src="images/founder.png" alt="founder" width="500" height="419">
+            </div>
+        </div>
+    </section>
+
+    <div class="glow-blob-right"></div>
+
+    <section class="contacts" id="contacts">
+        <div class="contacts__container container">
+            <div class="contacts-col">
+                <h1 class="contacts-col__title">Contacts</h1>
+                <p><a class="contacts-col__email" href="mailto:1@dlux.services">1@dlux.services</a></p>
+                <p><a class="contacts-col__phone" href="tel:+18143511265">+18143511265</a></p>
+            </div>
+
+            <form class="form" action="#" method="post">
+                <h2 class="form__title">Send <span class="title-span">a request</span></h2>
+                <label class="form__item item-type">
+                    <input class="form__input item-type__input" type="text" name="username" placeholder="" spellcheck="false">
+                    <span class="form__label item-type__label">Name</span>
+                </label>
+                <label class="form__item item-type">
+                    <input class="form__input item-type__input" type="text" name="company" placeholder="" spellcheck="false">
+                    <span class="form__label item-type__label">Company</span>
+                </label>
+                <label class="form__item item-type">
+                    <input class="form__input item-type__input" type="tel" name="phone" placeholder="" spellcheck="false">
+                    <span class="form__label item-type__label">Callback phone number</span>
+                </label>
+                <label class="form__item item-type form-when-to-call__item">
+                    <input class="form__input item-type__input" type="text" name="when-to-call" placeholder="" spellcheck="false">
+                    <span class="form__label item-type__label">When is a good time to call</span>
+                </label>
+                <label class="form__item item-type">
+                    <input class="form__input item-type__input" type="email" name="email" placeholder="" spellcheck="false">
+                    <span class="form__label item-type__label">Email</span>
+                </label>
+
+                <label class="form__item item-type">
+                    <textarea class="form__input item-type__input" name="message" placeholder=""></textarea>
+                    <span class="form__label item-type__label">What can we help you with?</span>
+                </label>
+
+                <label class="form__item item-select">
+                    <select class="form__input item-select__select" required>
+                        <option class="item-select__option" value="" disabled selected hidden></option>
+                        <option class="item-select__option">Option1</option>
+                        <option class="item-select__option">Option2</option>
+                        <option class="item-select__option">Option3</option>
+                    </select>
+                    <span class="form__label item-select__label">How did you find us?</span>
+                </label>
+
+                <label class="item-checkbox">
+                    <input class="item-checkbox__input" type="checkbox">
+                    <span class="item-checkbox__label">I agree with the personal data processing policy</span>
+                </label>
+
+                <button class="form__btn btn btn--narrow">Send a request</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<section class="footer">
+    <div class="footer__container container">
+        <div class="footer-nav">
+            <ul class="footer-nav__menu">
+                <li>
+                    <a class="menu-link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="#founder">Founder</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+            <div class="footer-nav__s-media">
+                <h2 class="s-media__title">Social media</h2>
+                <ul class="s-media__list">
+                    <li class="facebook">
+                        <a class="s-media__link" href="https://facebook.com">
+                            <img class="s-media__icon" src="images/s-media_facebook.svg" alt="Facebook" width="48" height="48">
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a class="s-media__link" href="https://instagram.com">
+                            <img class="s-media__icon" src="images/s-media_instagram.svg" alt="Instagram" width="48" height="48">
+                        </a>
+                    </li>
+                    <li class="twitter">
+                        <a class="s-media__link" href="https://x.com">
+                            <img class="s-media__icon" src="images/s-media_twitter.svg" alt="Twitter" width="48" height="48">
+                        </a>
+                    </li>
+                    <li class="linkedin">
+                        <a class="s-media__link" href="https://linkedin.com">
+                            <img class="s-media__icon" src="images/s-media_linkedin.svg" alt="LinkedIn" width="48" height="48">
+                        </a>
+                    </li>
+                    <li class="telegram">
+                        <a class="s-media__link" href="https://telegram.org">
+                            <img class="s-media__icon" src="images/s-media_telegram.svg" alt="Telegram" width="48" height="48">
+                        </a>
+                    </li>
+                    <li class="whatsapp">
+                        <a class="s-media__link" href="https://whatsapp,com">
+                            <img class="s-media__icon" src="images/s-media_whatsapp.svg" alt="WhatsApp" width="48" height="48">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-btm">
+            <img class="footer-btm__logo" src="images/logo.svg" alt="logo" width="249" height="125">
+            <h1 class="footer-btm__title">20 years of high performance <span class="title-span">cloud based development</span> experience</h1>
+            <ul class="footer-btm__list">
+                <li>
+                    <a class="footer-btm__link" href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a class="footer-btm__link" href="#">Rules for the processing of personal data</a>
+                </li>
+                <li>
+                    <a class="footer-btm__link" href="#">Website Terms of Use</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
