@@ -200,6 +200,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    /*overflow: hidden;*/
 }
 .hero::before {
     content: "";
@@ -1283,7 +1284,53 @@ p {
     }
 }
 
-
+/*==============================*/
+/*==============================*/
+/*PAGE: RULES PERSONAL DATA*/
+/*==============================*/
+/*==============================*/
+.rules__title-1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 92%;
+    letter-spacing: -0.06em;
+    margin-top: 64px;
+    margin-bottom: 24px;
+}
+.rules__title-2 {
+    font-family: "Oxygen", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+.rules__text {
+    margin-bottom: 16px;
+    text-wrap: pretty;
+}
+.rules__item {
+    margin-bottom: 8px;
+}
+.width-1 {
+    max-width: 895px;
+}
+.width-2 {
+    max-width: 848px;
+}
+.width-3 {
+    max-width: 759px;
+}
+.width-4 {
+    max-width: 652px;
+}
+.width-5 {
+    max-width: 582px;
+}
+@media (max-width: 600px) {
+    .rules__title-1 {
+        font-size: 24px;
+    }
+}
 
 /*
 .poppins-thin {
