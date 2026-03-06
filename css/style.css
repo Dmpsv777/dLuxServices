@@ -1069,13 +1069,13 @@ p {
     }
 }
 @media (max-width: 600px) {
-    .founder-plus-contacts-wrapper::before {
+    .founder-contacts-wrapper::before {
         content: "";
         position: absolute;
         inset: -20%;
         background-image: url("../images/bg_Clouds.png");
         background-repeat: no-repeat;
-        background-position: 10% 50%;
+        background-position: 60% 60%;
         /*background-size: cover;*/
 
         transform: rotate(21.85deg);
@@ -1286,7 +1286,7 @@ p {
 
 /*==============================*/
 /*==============================*/
-/*PAGE: RULES PERSONAL DATA*/
+/*PAGE: RULES-PERSONAL-DATA*/
 /*==============================*/
 /*==============================*/
 .rules__title-1 {
