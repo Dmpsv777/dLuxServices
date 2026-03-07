@@ -882,6 +882,7 @@ p {
     width: 100%;
     background-image: url(../images/bg_Clouds.png);
     background-repeat: no-repeat;
+    background-position-x: -558px;
 }
 .contacts__container {
     padding-block: 100px;
@@ -1072,10 +1073,10 @@ p {
     .founder-contacts-wrapper::before {
         content: "";
         position: absolute;
-        inset: -20%;
+        inset: -90%;
         background-image: url("../images/bg_Clouds.png");
         background-repeat: no-repeat;
-        background-position: 60% 60%;
+        background-position: 20% 51%;
         /*background-size: cover;*/
 
         transform: rotate(21.85deg);
