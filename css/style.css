@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -186,7 +186,6 @@ p {
         content: none;
     }
 }
-
 /*==============================*/
 /*==============================*/
 /*SECTION: HERO*/
@@ -205,19 +204,17 @@ p {
 .hero::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset:0;
     background-color: hsl(from var(--bg-main-clr) h s l / .8);
     z-index: 1;
 }
-
+/*==============================*/
+/*HERO HEADER MENU -- MOBILE*/
+/*==============================*/
 .header-mob__menu {
     position: absolute;
     top: 0;
     right: 0;
-
     width: 80vw;
     height: 100vh;
     background-color: var(--bg-main-clr);
@@ -238,7 +235,6 @@ p {
 .header-mob__menu-toggle:checked + .header-mob__menu-btn + .header-mob__menu-backdrop + .header-mob__menu {
     transform: translateX(0);
 }
-
 .header-mob__menu-btn {
     position: absolute;
     top: 33px;
@@ -247,6 +243,7 @@ p {
     padding: 16px;
     color: var(--txt-main-clr);
     z-index: 200;
+    outline: red 3px dotted;
 }
 .header-mob__menu-toggle,
 .header-mob__menu-icon {
@@ -266,15 +263,14 @@ p {
     pointer-events: auto;
 }
 
-.mob-menu-part-one__menu-list,
-.mob-menu-part-two__menu-list {
+.mob-menu-top__menu-list,
+.mob-menu-btm__menu-list {
     list-style: none;
     padding: 0;
 }
-.mob-menu-part-one__menu-title {
+.mob-menu-top__menu-title {
     height: 12vh;
     background-color: var(--btn-clr-one);
-
     font-size: 16px;
     font-weight: 700;
 
@@ -282,8 +278,8 @@ p {
     align-items: center;
     justify-content: center;
 }
-.mob-menu-part-one__menu-item,
-.mob-menu-part-two__menu-item {
+.mob-menu-top__menu-item,
+.mob-menu-btm__menu-item {
     height: 12vh;
     padding-left: 22px;
     border-bottom: 1px solid hsl(from var(--txt-main-clr) h s l / .17);
@@ -291,7 +287,7 @@ p {
     display: flex;
     align-items: center;
 }
-.mob-menu-part-one__menu-item:last-of-type {
+.mob-menu-top__menu-item:last-of-type {
     border-bottom: none;
 }
 .mob-item-email,
@@ -324,7 +320,9 @@ p {
     justify-content: flex-end;
     max-width: 324px;
 }
-
+/*==============================*/
+/*HERO HEADER MENU -- DESKTOP*/
+/*==============================*/
 .hero-content {
     margin-top: 135px;
     position: relative;
@@ -345,6 +343,9 @@ p {
     flex-direction: column;
     gap: 8px;
 }
+/*==============================*/
+/*HERO CONTENT*/
+/*==============================*/
 .hero-content__item {
     line-height: 100%;
     display: flex;
@@ -369,7 +370,9 @@ p {
         display: block;
         width: 14px;
         height: auto;
-    /*    padding: 0 0 100px 50px;*/
+        /*padding: 0 0 100px 0;*/
+
+        /*outline: 1px solid red;*/
     }
     .header-mob__menu-toggle:checked + .header-mob__menu-btn .mob-icon-open {
         display: none;
@@ -379,7 +382,9 @@ p {
         position: absolute;
         right: calc(84vw - 10px);
         top: 0;
-        /*padding: 0 20px 300px 20px;*/
+        /*padding: 10px;*/
+
+        /*outline: 1px solid red;*/
     }
 
     .hero__container {
@@ -1081,8 +1086,6 @@ p {
         background-image: url("../images/bg_Clouds.png");
         background-repeat: no-repeat;
         background-position: 15% 55%;
-        /*background-size: cover;*/
-
         transform: rotate(21.85deg);
     }
     .contacts {
