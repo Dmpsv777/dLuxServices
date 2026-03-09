@@ -15,9 +15,9 @@
 <body>
 
 <section class="hero">
-    <div class="header-mob">
-        <input class="header-mob__menu-toggle" type="checkbox" id="menu-toggle">
-        <label class="header-mob__menu-btn" for="menu-toggle">
+    <nav class="header-mob">
+        <input id="menu-toggle" class="header-mob__menu-toggle" type="checkbox">
+        <label for="menu-toggle" class="header-mob__menu-btn">
             <svg class="header-mob__menu-icon mob-icon-open" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 11L9 11M1 6H15M7 1L15 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -25,9 +25,9 @@
                 <path d="M16 16L8 8M16 8L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </label>
-        <div class="header-mob__menu-backdrop"></div>
-        <ul class="header-mob__menu">
-            <li class="mob-menu-top">
+        <label for="menu-toggle" class="header-mob__menu-backdrop"></label>
+        <nav class="header-mob__menu">
+            <div class="mob-menu-top">
                 <h2 class="mob-menu-top__menu-title">Menu</h2>
                 <ul class="mob-menu-top__menu-list">
                     <li class="mob-menu-top__menu-item">
@@ -43,22 +43,22 @@
                         <a class="menu-link" href="#contacts">Contacts</a>
                     </li>
                 </ul>
-            </li>
-            <li class="mob-menu-btm">
+            </div>
+            <div class="mob-menu-btm">
                 <ul class="mob-menu-btm__menu-list">
-                    <li class="mob-menu-btm__menu-item mob-item-email">
+                    <li class="mob-menu-btm__menu-item">
                         <a class="menu-link" href="mailto:1@dlux.services">1@dlux.services</a>
                     </li>
-                    <li class="mob-menu-btm__menu-item mob-item-tel">
+                    <li class="mob-menu-btm__menu-item">
                         <a class="menu-link" href="tel:+18143511265">+18143511265</a>
                     </li>
                 </ul>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </nav>
+    </nav>
 
     <div class="hero__container container">
-        <div class="header-desktop">
+        <nav class="header-desktop">
             <a class="logo-link" href="index.html">
                 <img class="header-desktop__logo" src="../images/logo.svg" alt="Company Name" width="159" height="104">
             </a>
@@ -76,7 +76,7 @@
                     <a class="menu-link" href="#contacts">Contacts</a>
                 </li>
             </ul>
-        </div>
+        </nav>
 
         <div class="hero-content">
             <h1 class="hero-content__title">Cloud software development</h1>
@@ -262,17 +262,11 @@
                 <img class="footer-btm__logo" src="../images/logo.svg" alt="Company Name" width="249" height="125">
             </a>
             <h1 class="footer-btm__title">20 years of high performance <span class="title-span">cloud based development</span> experience</h1>
-            <ul class="footer-btm__list">
-                <li>
-                    <a class="footer-btm__link" href="#">Privacy Policy</a>
-                </li>
-                <li>
-                    <a class="footer-btm__link" href="rules-personal-data.html#rules">Rules for the processing of personal data</a>
-                </li>
-                <li>
-                    <a class="footer-btm__link" href="#">Website Terms of Use</a>
-                </li>
-            </ul>
+            <nav class="footer-btm__links">
+                <p><a class="footer-btm__link" href="#">Privacy Policy</a></p>
+                <p><a class="footer-btm__link" href="rules-personal-data.html">Rules for the processing of personal data</a></p>
+                <p><a class="footer-btm__link" href="#">Website Terms of Use</a></p>
+            </nav>
         </div>
     </div>
 </section>
